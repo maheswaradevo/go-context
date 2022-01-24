@@ -8,7 +8,9 @@ import (
 	"time"
 )
 
-func TestContextWIthDeadline(t *testing.T){
+//Context with deadline used when we want to finished the process
+//with the time that we decided to
+func TestContextWithDeadline(t *testing.T){
 	fmt.Println("Goroutines : ", runtime.NumGoroutine())
 	parent := context.Background()
 	
